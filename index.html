@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web harapan❤️</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff758c, #ff7eb3);
+        color: white;
+        overflow: hidden;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 35px 25px;
+        border-radius: 25px;
+        box-shadow: 0 8px 30px #0002;
+        width: 280px;
+        backdrop-filter: blur(8px);
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .heart {
+        font-size: 65px;
+        animation: beat 1s infinite;
+      }
+
+      @keyframes beat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+
+      button {
+        background: white;
+        color: #ff4f81;
+        border: none;
+        padding: 12px 22px;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 15px;
+      }
+
+      #pesan {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="heart">❤️</div>
+      <h1>Harapan kita<h1>
+      <h3>SAUQI 💕 BERLIAN</h3>
+      <p>SEMOGA KITA DIPERTEMUKAN SEBELUM JUNI 2028</p>
+
+      <button onclick="tampilPesan()">Klik ya adek 💌</button>
+
+      <div id="pesan"></div>
+    </div>
+
+    <script>
+      function tampilPesan() {
+        document.getElementById("pesan").innerHTML =
+          "Aku tidak mencari yang sempurna,<br>" +
+          "aku hanya ingin kamu,<br>" +
+          "hari ini, esok, dan seterusnya. semoga kamu sabar menunggu akus. ❤️";
+      }
+    </script>
+  </body>
+</html>
